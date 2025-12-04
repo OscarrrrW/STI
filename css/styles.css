@@ -18,7 +18,7 @@
   border:0
 }
 
-/* Skip link - visually hidden but appears when focused */
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -27,8 +27,7 @@
   height: 1px;
   overflow: hidden;
 }
-.skip-link:focus,
-.skip-link:focus-visible {
+.skip-link:focus, .skip-link:focus-visible {
   position: fixed;
   left: 16px;
   top: 12px;
@@ -42,13 +41,13 @@
   text-decoration: none;
 }
 
-/* focus visuals for keyboard navigation: yellow box like hover state */
+
 .btn:focus-visible {
   outline: 2px solid #ffd400;
   outline-offset: 2px;
 }
 .btn:focus {
-  /* fallback for browsers without focus-visible support */
+
   outline: 2px solid #ffd400;
   outline-offset: 2px;
 }

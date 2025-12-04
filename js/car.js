@@ -197,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		btn.addEventListener('keyup', (e) => {
 			if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
 				clearPressed(btn);
-				// trigger activation for keyboard users
 				try { btn.click(); } catch (err) { /* ignore */ }
 			}
 		});
