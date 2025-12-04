@@ -195,7 +195,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') { e.preventDefault(); setPressed(btn); }
 		});
 		btn.addEventListener('keyup', (e) => {
-			if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') clearPressed(btn);
+			if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
+				clearPressed(btn);
+				// trigger activation for keyboard users
+				try { btn.click(); } catch (err) { /* ignore */ }
+			}
 		});
 
 		btn.addEventListener('click', () => setTimeout(() => clearPressed(btn), 0));
