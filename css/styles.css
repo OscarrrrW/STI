@@ -54,7 +54,7 @@
 
 @font-face{
   font-family:'Subaru';
-  src:url('/font/OPTIEdgarBold-Extended.otf') format('truetype');
+  src:url('../font/OPTIEdgarBold-Extended.otf') format('truetype');
 }
 
 html,body{height:100%}
